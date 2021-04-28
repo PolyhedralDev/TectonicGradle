@@ -1,3 +1,5 @@
+package com.dfsek.tectonicgradle
+
 import org.gradle.api.tasks.SourceTask
 import org.gradle.api.tasks.TaskAction
 import com.github.javaparser.StaticJavaParser

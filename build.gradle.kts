@@ -15,3 +15,20 @@ dependencies {
     implementation(kotlin("stdlib"))
     api("com.github.javaparser:javaparser-symbol-solver-core:3.20.2")
 }
+
+pluginBundle {
+    website = "https://github.com/PolyhedralDev/TectonicGradle"
+    vcsUrl = "https://github.com/PolyhedralDev/TectonicGradle"
+    tags = listOf("tectonic", "config", "docs")
+}
+
+gradlePlugin {
+    plugins {
+        create("tectonicgradle") {
+            id = "com.dfsek.tectonicgradle"
+            displayName = "Tectonic Gradle"
+            description = "Grade plugin to generate Javadoc-style documentation for Tectonic configurations."
+            implementationClass = "com.dfsek.tectonicgradle.TectonicGradle"
+        }
+    }
+}
